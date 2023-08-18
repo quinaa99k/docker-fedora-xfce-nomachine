@@ -15,8 +15,8 @@ Also featured on https://dev.to/cmanique/docker-as-an-alternative-to-virtual-mac
 ### a) Build the image from this repository
 
 ```
-$ git clone https://github.com/cmanique/docker-fedora-xfce-nomachine.git
-$ cd docker-fedora-xfce-nomachine
+git clone https://github.com/quinaa99k/docker-fedora-xfce-nomachine.git
+cd docker-fedora-xfce-nomachine
 docker build -t fedora-xfce-nomachine .
 ```   
 
