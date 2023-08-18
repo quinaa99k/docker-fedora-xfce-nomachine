@@ -23,13 +23,13 @@ docker build -t fedora-xfce-nomachine .
 ### b) Directly from Docker Hub
 
 ```
-$ docker pull cmanique/fedora-xfce-nomachine
+ docker pull cmanique/fedora-xfce-nomachine
 ```
 
 ### Start a container
 
 ```
-$ docker run --cap-add=SYS_PTRACE -d -p 4000:4000 --name fedora-xfce-nomachine cmanique/fedora-xfce-nomachine
+ docker run --cap-add=SYS_PTRACE -d -p 4000:4000 --name fedora-xfce-nomachine cmanique/fedora-xfce-nomachine
 ```
 
 > note the container needs to be run as a daemon (unless you want it to run privileged, and it's pointless because of the entrypoint)
@@ -37,13 +37,13 @@ $ docker run --cap-add=SYS_PTRACE -d -p 4000:4000 --name fedora-xfce-nomachine c
 ### Bash into the container with docker exec
 
 ```
-$ docker exec -it fedora-xfce-nomachine bash
+ docker exec -it fedora-xfce-nomachine bash
 ```
 
 ### Start the NoMachine server
 
 ```
-$ /usr/NX/bin/nxserver --startup
+ /usr/NX/bin/nxserver --startup
 
 NX> 111 New connections to NoMachine server are enabled.
 NX> 161 Enabled service: nxserver.
