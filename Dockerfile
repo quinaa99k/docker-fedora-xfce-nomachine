@@ -54,7 +54,7 @@ RUN yum update -y && yum install -y \
 RUN mkdir -p /var/lib/dbus && dbus-uuidgen > /var/lib/dbus/machine-id && mkdir -p /var/run/dbus
 
 # install nomachine
-RUN curl -fSL "https://download.nomachine.com/download/6.9/Linux/nomachine_6.9.2_1_x86_64.rpm" -o nomachine.rpm && \
+RUN curl -fSL "https://download.nomachine.com/download/8.8/Linux/nomachine_8.8.1_1_x86_64.rpm" -o nomachine.rpm && \
     rpm -i nomachine.rpm && \
     rm -rf nomachine.rpm
 
